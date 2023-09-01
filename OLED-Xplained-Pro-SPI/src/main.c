@@ -145,7 +145,6 @@ int main (void)
 //     gfx_mono_draw_string("mundo", 50,16, &sysfont);
 
   /* Insert application code here, after the board has been initialized. */
-  int delay = 500;
 	while(1) {
 		frequency = 1;		
 		char str[14];
@@ -197,7 +196,7 @@ int main (void)
 					gfx_mono_draw_string(str, 50,0, &sysfont);
 				}
 				gfx_mono_draw_string("Hz", 60,0, &sysfont);
-				delay = 500 / frequency;
+				int delay = 500 / frequency;
 				pisca_led(1, delay);				
 			}
 			pmc_sleep(SAM_PM_SMODE_SLEEP_WFI);
