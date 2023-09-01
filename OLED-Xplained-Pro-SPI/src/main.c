@@ -145,10 +145,9 @@ int main (void)
 //     gfx_mono_draw_string("mundo", 50,16, &sysfont);
 
   /* Insert application code here, after the board has been initialized. */
+  int delay = 500;
 	while(1) {
-		frequency = 1;
-		int delay = 500;
-		
+		frequency = 1;		
 		char str[14];
 		sprintf(str, "%d", frequency);
 			// Escreve na tela um circulo e um texto
