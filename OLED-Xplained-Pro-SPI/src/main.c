@@ -37,7 +37,7 @@ volatile char but1_flag = 0;
 volatile char but1_2_flag = 0;
 volatile char but2_flag = 0;
 volatile char but3_flag = 0;
-volatile int frequency = 1;
+
 /************************************************************************/
 /* prototype                                                            */
 /************************************************************************/
@@ -145,6 +145,7 @@ int main (void)
 //     gfx_mono_draw_string("mundo", 50,16, &sysfont);
 
   /* Insert application code here, after the board has been initialized. */
+  int frequency = 1;
 	while(1) {
 		frequency = 1;		
 		char str[14];
