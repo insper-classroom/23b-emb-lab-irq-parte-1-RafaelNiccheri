@@ -44,7 +44,6 @@ volatile char but3_flag = 0;
 void but1_callback(void);
 void but2_callback(void);
 void but3_callback(void);
-void frequency_handler(int pressed);
 void io_init(void);
 void pisca_led(int n, int t);
 
@@ -145,9 +144,8 @@ int main (void)
 //     gfx_mono_draw_string("mundo", 50,16, &sysfont);
 
   /* Insert application code here, after the board has been initialized. */
-  int frequency = 1;
 	while(1) {
-		frequency = 1;		
+		int frequency = 1;		
 		char str[14];
 		sprintf(str, "%d", frequency);
 			// Escreve na tela um circulo e um texto
